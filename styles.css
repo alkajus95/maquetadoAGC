@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 10vh;
+}
+main {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: 80vh;
+}
+
+aside {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    height: 80vh;
+    overflow-y: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+}
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+}
+header {
+    grid-area: header;
+}
+aside {
+    grid-area: aside;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+nav ul {
+    background-color: #453434;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: #333;
+    color: #337ab7;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #23527c;
+  }
+  img {
+    max-width: 25%;
+    height: auto;
+}
